@@ -1,0 +1,13 @@
+[Unit]
+Description=Qbittorrent Enhanced Edition WebUI
+After=network.target
+
+[Service]
+Type=exec
+User=root
+ExecStart=qbittorrent-nox
+ExecReload=kill -9 $(pidof qbittorrent-nox) && qbittorrent-nox -d
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
