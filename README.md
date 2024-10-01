@@ -1,2 +1,2 @@
 # config
-Stroage commom configs of mine
+单纯是怕忘了配置文件怎么写
